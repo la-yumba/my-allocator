@@ -1,0 +1,30 @@
+{
+  "name": "my-allocator",
+  "version": "1.0.0",
+  "description": "node.js api for myAllocator",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha tests/**/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/la-yumba/my-allocator.git"
+  },
+  "keywords": [
+    "myAllocator"
+  ],
+  "author": "Enrico Buonanno",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/la-yumba/my-allocator/issues"
+  },
+  "homepage": "https://github.com/la-yumba/my-allocator",
+  "dependencies": {
+    "lodash": "^3.8.0",
+    "request": "^2.55.0"
+  },
+  "devDependencies": {
+    "chai": "^2.3.0",
+    "mocha": "^2.2.4"
+  }
+}
