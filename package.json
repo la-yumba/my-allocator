@@ -1,6 +1,6 @@
 {
   "name": "my-allocator",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "node.js api for myAllocator",
   "main": "index.js",
   "scripts": {

@@ -55,7 +55,7 @@ module.exports = function(config, request) {
       if (err) return callback(err);
       if (res.statusCode !== 200) 
         return callback(res.statusCode);
-      if (!body.Success) 
+      if (body.Errors) 
         return callback(body.Errors);
       
       callback(null, body);

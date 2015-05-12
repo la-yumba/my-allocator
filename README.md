@@ -7,7 +7,7 @@ The API is documented [here](myallocator.github.io/apidocs/)
 ```
 var myAllocator = require('my-allocator')();
 
-myAllocator.HelloWorld({}, function(err, result) {
+myAllocator.HelloWorld({ hello: 'world' }, function(err, result) {
   console.log(result);
 });
 ```
@@ -34,7 +34,7 @@ var myAllocator = require('my-allocator')(options);
 The following options are available when you initialize.
 
 * **baseUrl** if not provided, defaults to ```https://api.myallocator.com/pms/v201408/json/```
-* **authParams** will be set for every subsequent request, but can also be overridden
+* **authParams** authentication parameters that will be passed with every subsequent request (but can be overridden)
 
 ### 2. Consume the API
 
@@ -48,11 +48,11 @@ var requestParams = {
 };
 
 myAllocator.RoomAvailabilityList(requestParams, function(err, result) {
-  console.log(result);
+  console.log(err, result);
 });
 ```
 
-Note that you requestParams object will be enriched with the authParams you 
+Note that you ```requestParams``` object will be enriched with the ```authParams``` you 
 passed in at initialization (you can override any of these by explicitely 
 passing in a different value in your requestParams, for example if you manage
 multiple properties).
